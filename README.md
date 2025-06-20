@@ -60,11 +60,11 @@ model.resize_token_embeddings(len(tokenizer))
 
 ##  Tokenization Strategy
 
-**Summarization
+**Summarization**
 Input:  <summarize> Summarize the following article: [article]
 Target: Summary: [highlight]
 
-**MCQ Generation
+**MCQ Generation**
 Input:  <mcq> Generate MCQs (Easy: 2, Medium: 1, Hard: 1): [passage]
 Target: MCQs:
 1. Question: ...
@@ -84,13 +84,6 @@ The dataset merges:
 
 10,000 summarization samples from the cnn_dailymail dataset (v3.0.0)
 
-**Format
-{
-  "input_text": "<mcq> Generate MCQs (Easy: 1, Medium: 1, Hard: 1): The cell is the basic unit of life...",
-  "target_text": "MCQs:\n1. Question: What is the basic unit of life?\n   Options:\n   A. Atom B. Cell C. Organ D. Tissue\n   Correct: B\n   Difficulty: Easy\n..."
-}
-
-## Dataset Summary
 | Task          | Samples  | Notes                               |
 | ------------- | -------- | ----------------------------------- |
 | MCQ (RACE)    | \~10,000 | Difficulty-balanced, labeled        |
