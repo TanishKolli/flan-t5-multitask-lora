@@ -1,6 +1,6 @@
 #  FLAN-T5 Multitask Fine-Tuning with LoRA
 
-This project explores multitask fine-tuning of [`google/flan-t5-base`](https://huggingface.co/google/flan-t5-base) using **Low-Rank Adaptation (LoRA)** via the 🤗 [PEFT](https://github.com/huggingface/peft) library. The dataset combines two instruction-like NLP tasks:
+This project explores multitask fine-tuning of [`google/flan-t5-base`](https://huggingface.co/google/flan-t5-base) using **Low-Rank Adaptation (LoRA)** via the  [PEFT](https://github.com/huggingface/peft) library. The dataset combines two instruction-like NLP tasks:
 
 - **Summarization** from news articles (CNN/DailyMail)
 - **MCQ Generation** from reading comprehension passages (RACE)
@@ -21,7 +21,7 @@ The aim is to train a **unified FLAN-T5 model** that can dynamically handle both
 
 -  Loads and formats the **RACE** and **CNN/DailyMail** datasets  
 -  Injects **task-specific prefixes** to guide generation  
--  Fine-tunes the model using 🤗 Transformers, Accelerate, and PEFT  
+-  Fine-tunes the model using Hugging face Transformers, Accelerate, and PEFT  
 - **Resumes training** from the most recent checkpoint (if available)  
 -  Produces a multi-task capable model with minimal compute
 
