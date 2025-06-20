@@ -2,8 +2,8 @@
 
 This project explores multitask fine-tuning of [`google/flan-t5-base`](https://huggingface.co/google/flan-t5-base) using **Low-Rank Adaptation (LoRA)** via the 🤗 [PEFT](https://github.com/huggingface/peft) library. The dataset combines two instruction-like NLP tasks:
 
-- ** Summarization** from news articles (CNN/DailyMail)
-- ** MCQ Generation** from reading comprehension passages (RACE)
+- **Summarization** from news articles (CNN/DailyMail)
+- **MCQ Generation** from reading comprehension passages (RACE)
 
 ---
 
