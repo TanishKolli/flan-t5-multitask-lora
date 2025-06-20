@@ -97,7 +97,7 @@ Training is performed using flan-t5-base with LoRA adapters on selected attentio
 
 Uses Hugging Face Trainer and Seq2SeqTrainingArguments
 
-Can resume from checkpoint-* inside flan-t5-lora-checkpoints/
+Can resume from checkpoint-*inside flan-t5-lora-checkpoints/*
 
 ---
 
